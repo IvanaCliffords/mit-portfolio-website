@@ -196,7 +196,7 @@ footer {
 
 @media (min-width: 550px) {
   .container-bio {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 60px auto 30px;
   }
@@ -206,6 +206,48 @@ footer {
   .bio-img {
     width: 70%;
     margin-top: 70px;
+  }
+}
+
+.skills-div {
+  margin: 0 auto 20px;
+  display: grid;
+  font-size: 50px;
+  background-color: rgba(255 255 255, 0.8);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.skills-h4 {
+  font-size: 30px;
+  color: var(--accent);
+  text-align: center;
+  padding: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.skills-div i {
+  font-size: 30px;
+  color: var(--dark);
+  padding: 15px;
+}
+
+.dev-skills {
+  text-align: center;
+}
+
+.other-skills span {
+  padding-left: 15px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 100;
+  color: var(--text);
+}
+
+@media (min-width: 550px) {
+  .skills-div {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -389,7 +431,6 @@ footer {
   text-align: center;
   color: #fff;
   background-color: #b8b8b8;
-  border: none;
   border-radius: 5px;
   transition: 0.2s;
   letter-spacing: 0.5rem;
@@ -400,7 +441,6 @@ footer {
 .card-btn:active {
   background-color: #a0a0a0;
   color: #fff;
-
   letter-spacing: 0.7rem;
 }
 
