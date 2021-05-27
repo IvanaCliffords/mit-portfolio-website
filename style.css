@@ -192,10 +192,17 @@ footer {
 }
 
 .bio-img {
+  display: block;
   width: 90%;
-  height: auto;
-  margin: 40px auto 0;
+  margin: 40px auto 20px;
   border-radius: 50%;
+}
+.bio-contact {
+  color: var(--light) !important;
+  font-size: 50px !important;
+}
+.bio-contact:hover {
+  color: #7ca7bb !important;
 }
 
 @media (min-width: 550px) {
