@@ -1,0 +1,409 @@
+/*********************************************
+
+STRUCTURE OF THE DOCUMENT: 
+1. General styling 
+2. Header styling 
+3. Footer styling 
+4. Home page styling 
+5. Projects page styling 
+
+Special thanks to freecodecamp.org and Kevin Powell's YouTube channel (https://www.youtube.com/user/KepowOb) for teaching me almost everything I know about CSS
+************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 63%;
+}
+
+:root {
+  --dark: #0d0d0d;
+  --light: #b8b8b8;
+  --accent: #2c7595;
+  --text: #3d3d3d;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fffafa;
+  font-family: "Comfortaa", cursive;
+  position: relative;
+  color: var(--text);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+/*******************************************/
+/****************HEADER start***************/
+/*******************************************/
+
+.navbar-brand {
+  font-size: 25px;
+  color: var(--accent) !important;
+  letter-spacing: 2px;
+}
+.nav-link {
+  font-size: 15px;
+  padding-left: 50px !important;
+  text-transform: uppercase;
+}
+.navbar-text {
+  font-size: 15px;
+}
+.container-fluid {
+  width: 85%;
+  padding: 20px 5px 15px;
+  border-bottom: 1.5px solid var(--dark);
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    margin-bottom: 50px !important;
+  }
+}
+
+/*******************************************/
+/****************HEADER END*****************/
+/*******************************************/
+
+/*******************************************/
+/***************FOOTER START****************/
+/*******************************************/
+
+.custom-shape-divider-bottom-1621638953 {
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -2;
+}
+
+.custom-shape-divider-bottom-1621638953 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-bottom-1621638953 .shape-fill {
+  fill: var(--accent);
+}
+footer {
+  position: relative;
+  background-color: var(--accent);
+  margin-top: 90px;
+  padding-bottom: 20px;
+  height: 150px;
+}
+
+.footer-h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.contact-a {
+  padding: 0 35px;
+  color: #fff;
+  font-size: 40px;
+}
+.contact-a:hover {
+  color: var(--light);
+}
+
+/*******************************************/
+/***************FOOTER END******************/
+/*******************************************/
+
+/*******************************************/
+/************HOME PAGE START****************/
+/*******************************************/
+.big-circle-home {
+  position: absolute;
+  top: 700px;
+  right: 25px;
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  z-index: -222;
+}
+.fourth {
+  top: 800px;
+  right: 90px;
+}
+@media (min-width: 550px) {
+  .big-circle-home {
+    top: 130px;
+  }
+  .fourth {
+    top: 180px;
+  }
+}
+.container-bio {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 30px;
+  margin: 40px auto 10px;
+}
+
+.bio-h2 {
+  font-size: 35px;
+  font-family: "Merienda", cursive;
+  color: var(--dark);
+  text-align: center;
+  letter-spacing: 5px;
+  animation: apear ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+.custom-p {
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  line-height: 1.7em;
+  margin: 23px auto;
+  text-align: center;
+}
+
+.bio-img {
+  width: 90%;
+  height: auto;
+  margin: 40px auto 0;
+  border-radius: 50%;
+}
+
+@media (min-width: 550px) {
+  .container-bio {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: 1fr;
+    margin: 60px auto 30px;
+  }
+  .bio-h2 {
+    font-size: 45px;
+  }
+  .bio-img {
+    width: 70%;
+    margin-top: 70px;
+  }
+}
+
+.container-video {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-div {
+  margin: 80px auto 0;
+  max-width: 750px;
+  width: 100%;
+}
+.video {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.3);
+}
+.video iframe {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*******************************************/
+/************HOME PAGE END******************/
+/*******************************************/
+
+/*******************************************/
+/***********PROJECTS PAGE START*************/
+/*******************************************/
+.big-circle {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  z-index: -222;
+}
+
+.small-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7ca7bb;
+  z-index: -221;
+  position: absolute;
+}
+
+.first {
+  top: 150px;
+  left: 125px;
+}
+
+.second {
+  top: 250px;
+  left: 60px;
+}
+
+.third {
+  top: 270px;
+  left: 85px;
+  background-color: #cbd9e1;
+}
+
+/* with the little help of my friend https://www.geeksforgeeks.org/how-to-draw-a-semi-circle-using-html-and-css/ */
+
+.semi-circle {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  height: 370px;
+  width: 180px;
+  border-radius: 200px 0 0 200px;
+  background-color: #cbd9e1;
+  z-index: -222;
+}
+
+.projects-intro {
+  max-width: 90%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 45px auto;
+}
+
+.projects-h2 {
+  font-size: 60px;
+  font-family: "Merienda", cursive;
+  padding: 0.5em 0;
+  letter-spacing: 0.15em;
+  text-align: center;
+  animation: apear ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+@media (min-width: 550px) {
+  .projects-p {
+    max-width: 60%;
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(autofit, minmax(20rem, 1fr));
+  grid-gap: 30px;
+}
+
+@media (min-width: 550px) {
+  .projects-grid {
+    width: 250em;
+    height: 90%;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+.projects-grid-item {
+  display: grid;
+  background-color: #fff;
+  border-radius: 7px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 1.3rem 3.2rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.projects-grid-item:hover {
+  transform: translateY(-0.2%);
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-header {
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--dark);
+  background-color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--light);
+}
+
+.card-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  background-color: #b8b8b8;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #a0a0a0;
+  color: #fff;
+
+  letter-spacing: 0.7rem;
+}
+
+/*******************************************/
+/**********PROJECTS PAGE END****************/
+/*******************************************/
