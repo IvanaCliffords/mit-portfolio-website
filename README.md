@@ -4,7 +4,7 @@
 <a href ="https://ivanacliffords.github.io/mit-portfolio-website/">See this page in the browser</a>
 ## Description
 
-This portfolio website consists of two pages (home and projects). Consists only of HTML and CSS. The header was imported from Bootstrap and modified to fit the goals of this webpages. I also imported two Google fonts and more than few Font Awesome icons. 
+This portfolio website consists of two pages (home and projects). Consists mostly of HTML and CSS. The header was imported from Bootstrap and modified to fit the goals of this webpages. I also imported two Google fonts and more than few Font Awesome icons. 
 
 
 
